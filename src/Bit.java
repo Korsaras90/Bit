@@ -5,13 +5,22 @@ public class Bit {
 
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
-
-        int[] mas = new int[n];
-
+        int r = 0;
         for (int i = 0; i < n; i++) {
-            mas[i] = in.nextInt();
+            String w = in.next();
+            if (w.equals("++x")) {
+                r++;
+            }
+            if (w.equals("x++")) {
+                r++;
+            }
+            if (w.equals("--x")) {
+                r--;
+            }
+            if (w.equals("x--")) {
+                r--;
+            }
         }
-
-        System.out.println();
+        System.out.println(r);
     }
 }
