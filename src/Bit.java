@@ -8,16 +8,10 @@ public class Bit {
         int r = 0;
         for (int i = 0; i < n; i++) {
             String w = in.next();
-            if (w.equals("++x")) {
+            if (w.equals("++x")||w.equals("x++")) {
                 r++;
             }
-            if (w.equals("x++")) {
-                r++;
-            }
-            if (w.equals("--x")) {
-                r--;
-            }
-            if (w.equals("x--")) {
+            if (w.equals("--x")||w.equals("x--")) {
                 r--;
             }
         }
